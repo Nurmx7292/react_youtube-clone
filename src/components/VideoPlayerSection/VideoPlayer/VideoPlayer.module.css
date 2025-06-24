@@ -38,3 +38,66 @@
     font-size: 36px;
     font-weight: 700;
 }
+.video-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0 20px 0;
+    border-bottom: 1px solid #ffffff80;
+}
+.video-controls{
+    display: flex;
+    gap: 10px;
+}
+.video-views{
+    font-size: 20px;
+    color: #C2C2C2;
+
+}
+.subscribe-button{
+    white-space: nowrap;
+    height: 40px;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.channel-card{
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+.channel-image{
+
+}
+.channel-info{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+.channel-title{
+    font-size: 26px;
+}
+.publish-date{
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #c2c2c253;
+}
+.channel-descr{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff71;
+    max-width: 700px;
+}
+.more{
+    font-size: 20px;
+    color: #c2c2c274;
+}
