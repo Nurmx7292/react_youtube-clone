@@ -1,3 +1,8 @@
+.videoPlayer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .player{
     position: relative;
     width: 100%;
@@ -68,7 +73,7 @@
     transition: background 0.2s;
 }
 .channel-card{
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     gap: 12px;
     justify-content: space-between;
@@ -100,4 +105,64 @@
 .more{
     font-size: 20px;
     color: #c2c2c274;
+}
+
+.mobileControls {
+    display: none;
+}
+.sub-amount-mobile{
+    display: none;
+}
+@media(max-width:900px){
+    .publish-date,.channel-descr,.more,.sub-amount,.bottomControls{
+        display: none;
+    }
+    .video-info{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .video-controls{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sub-amount-mobile{
+        display: block;
+    }
+    .mobileControls {
+        align-items: center;
+        border-radius: 30px;
+        padding: 2% 5%;
+        background: rgba(0, 0, 0, 0.129);
+        gap: 8px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        
+    }
+    .video-title,
+    .video-info{
+    padding: 0 16px;
+    }
+    .subscribe-button{
+    background: none;
+    color: #ff0000;
+    }
+    .channel-card{
+        margin: 0;
+        align-items: center;
+        padding: 20px 16px;
+    }
+}
+@media(max-width:768px){
+    .video-title{
+        font-size: 24px;
+    }
+    .channel-title{
+        font-size: 16px;
+    }
+    .video-views{
+    font-size: 12px;
+    }
 }

@@ -6,3 +6,10 @@
     gap: 40px;
     
 }
+
+@media(max-width:900px){
+    .main-wrapper{
+        flex-direction: column;
+        padding: 0;
+    }
+}

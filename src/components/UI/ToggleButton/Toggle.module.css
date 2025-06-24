@@ -9,3 +9,9 @@
     font-weight: 500;
     text-transform: uppercase;
 }
+
+@media(max-width:900px){
+    .toggle-name{
+        font-size: 10px;
+    }
+}

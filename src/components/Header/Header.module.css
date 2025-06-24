@@ -41,6 +41,26 @@
     align-items: center;
     gap: 20px;
 }
+
+.more{
+    display: none;
+}
 .profile-pic{
     border-radius: 100%;
+}
+
+@media(max-width:900px){
+    input,.header-actions,.logo>button:nth-child(1){
+        display: none;
+    }
+    .search,.more{
+    display: block;
+    }
+    .search-bar{
+        display: flex;
+        align-items: center;
+        width: 1%;
+        position:static;
+        margin: 0;
+    }
 }

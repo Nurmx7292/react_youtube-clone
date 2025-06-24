@@ -15,6 +15,7 @@ export const Header = () => {
         </div>
         <form action="#" className={classes["search-bar"]}>
                 <input type="text" name="search" id="search" placeholder="Search" aria-label="Search query"/>
+                <button className={classes.more} aria-label="More Button"><img src="assets/Vertical.svg" alt="#"/></button>
                 <button className={classes.search} aria-label="Search"><img src="assets/search.svg" alt="#"/></button>
         </form>
         <div className={classes["header-actions"]}>
