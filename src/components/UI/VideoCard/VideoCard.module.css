@@ -1,0 +1,36 @@
+.video-card {
+    flex-shrink: 0;
+    border-radius: 16px;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+.video-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0 4px 12px;
+}
+.video-time {
+    position: absolute;
+    top: 55%;
+    right: 8px;
+    background: #000a;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+.video-meta {
+    color: #ffffff5e;
+    font-size: 13px;
+    margin: 0 0 12px 12px;
+    white-space: nowrap;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}

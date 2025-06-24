@@ -1,7 +1,7 @@
 import './App.css'
 import { Header } from './components/Header/Header'
 import { Main } from './components/Main/Main'
-import { VideoPlayer } from './components/VideoPlayer/VideoPlayer'
+import { VideoPlayerSection } from './components/VideoPlayerSection/VideoPlayerSection'
 import { VideosSection } from './components/VideosSection/VideosSection'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <div className="app">
         <Header/>
          <Main>
-            <VideoPlayer/>
+            <VideoPlayerSection/>
             <VideosSection/>
          </Main>
       </div>
