@@ -7,7 +7,7 @@ export const Player = () => {
     <div className={classes.player}>
         <img className={classes.cover} src={Cover} alt="#" />
         <div className={classes.controls}>
-            <ProgressBar/>
+            <ProgressBar duration={"3:22"} currentTime={"1:22"}/>
             <div className={classes.bottomControls}>
                 <button><img src="assets/Pause.svg" alt="#" /></button>
                 <button><img src="assets/Next.svg" alt="#" /></button>
