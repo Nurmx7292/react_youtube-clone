@@ -1,13 +1,13 @@
 import React from 'react'
-import classes from "./VideoCard"
-export const VideoCard = ({time,title,meta}) => {
+import classes from "./VideoCard.module.css"
+export const VideoCard = ({cover,time,title,meta}) => {
   return (
-    <li class={classes["video-card"]}>
-        <img src="https://placehold.co/250x150/F9A8D4/31343C" alt="Astronomy Or Astrology"/>
-        <div class={classes["video-time"]}>{time}</div>
-        <div class={classes["video-info"]}>
-            <div class={classes["video-title"]}>{title}</div>
-            <div class={classes["video-meta"]}>
+    <li className={classes["video-card"]}>
+        <img src={cover} alt="Astronomy Or Astrology"/>
+        <div className={classes["video-time"]}>{time}</div>
+        <div className={classes["video-info"]}>
+            <div className={classes["video-title"]}>{title}</div>
+            <div className={classes["video-meta"]}>
                 <div>{meta.views} • {meta.date} ago •</div>
                 <div>{meta.author}</div>
             </div>

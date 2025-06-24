@@ -1,7 +1,7 @@
 .video-card {
     flex-shrink: 0;
     border-radius: 16px;
-    width: 250px;
+    width: 367px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -17,7 +17,7 @@
 }
 .video-time {
     position: absolute;
-    top: 55%;
+    top: 65%;
     right: 8px;
     background: #000a;
     color: #fff;
@@ -33,4 +33,10 @@
     width: 95%;
     display: flex;
     justify-content: space-between;
+}
+.video-card img {
+    width: 100%;
+    border-radius: 16px;
+    height: auto;
+    object-fit: cover;
 }
