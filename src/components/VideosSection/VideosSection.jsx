@@ -1,5 +1,7 @@
 import React from 'react'
+import classes from "./VideosSection.module.css"
 import { VideosList } from './VideosList/VideosList'
+import { Toggle } from '../UI/ToggleButton/Toggle';
 const videos = [
   {
     id:1,
@@ -49,8 +51,12 @@ const videos = [
 export const VideosSection = () => {
     
   return (
-    <>
+    <div className={classes["videos-section"]}>  
+        <div className={classes["list-info"]}>
+            <div className={classes["list-name"]}>Next</div>
+            <Toggle toggleName={"Autoplay"}/>
+        </div>
         <VideosList videos={videos}/>
-    </>
+    </div>
   )
 }
