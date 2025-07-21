@@ -1,15 +1,19 @@
-.main-wrapper{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 70px 0 32px;
-    gap: 40px;
-    
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 70px 0 80px;
+  gap: 40px;
 }
 
-@media(max-width:900px){
-    .main-wrapper{
-        flex-direction: column;
-        padding: 0;
-    }
+@media (max-width: 900px) {
+  .main-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main-wrapper {
+    gap: 0;
+  }
 }

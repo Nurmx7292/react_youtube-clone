@@ -1,0 +1,13 @@
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: url("/src/assets/12.png") no-repeat center top;
+  background-size: cover;
+  opacity: 0;
+  z-index: 9999;
+}
