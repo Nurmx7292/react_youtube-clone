@@ -11,10 +11,16 @@
   display: flex;
   gap: 50px;
 }
+.header-actions button {
+  margin: 4px 0 0 0;
+}
+.header-actions button:nth-child(3) {
+  position: relative;
+}
 .notifications-count {
   border-radius: 50%;
   right: -5.3px;
-  top: 1px;
+  top: -3px;
   background: red;
   color: white;
   font-size: 12px;
@@ -32,7 +38,7 @@
 }
 .search-bar > input {
   border: none;
-  padding: 20px;
+  padding: 21px 20px 20px 23px;
   font-weight: 400;
   font-size: 16px;
   color: #ffffff68;

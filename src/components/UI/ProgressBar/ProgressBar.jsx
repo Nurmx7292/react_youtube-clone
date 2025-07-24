@@ -7,9 +7,9 @@ export const ProgressBar = ({ currentTime, duration }) => {
         {currentTime}
       </div>
       <div className={classes.progressBar}>
-        <div className={classes.progress} style={{ width: "37.77%" }}></div>
+        <div className={classes.progress} style={{ width: "21.5%" }}></div>
       </div>
-      <div className={`${classes["time-to"]} ${classes.time}`}>-{duration}</div>
+      <div className={`${classes["time-to"]} ${classes.time}`}>{duration}</div>
     </div>
   );
 };

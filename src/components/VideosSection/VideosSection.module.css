@@ -19,7 +19,7 @@
   .videos-section {
     width: 100%;
     padding: 0 16px;
-    gap: 10px;
+    gap: 9px;
   }
   .list-name {
     font-size: 20px;
@@ -27,6 +27,6 @@
 }
 @media (max-width: 768px) {
   .list-info {
-    padding-top: 25px;
+    padding-top: 26px;
   }
 }

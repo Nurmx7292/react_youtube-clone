@@ -24,7 +24,7 @@ export const Header = () => {
           aria-label="Search query"
         />
         <button className={classes.search} aria-label="Search">
-          <img src="assets/Search.svg" alt="#" />
+          <img src="assets/search.svg" alt="#" />
         </button>
         <button className={classes.more} aria-label="More Button">
           <img src="assets/Vertical.svg" alt="#" />

@@ -5,7 +5,7 @@
   align-items: center;
   gap: 10px;
   font-size: 12px;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 .time {
   position: absolute;
@@ -14,11 +14,11 @@
   color: white;
 }
 .time-from {
-  top: -46px;
+  top: -48px;
   left: 0;
 }
 .time-to {
-  top: -46px;
+  top: -48px;
   right: 0;
 }
 .progressBar {
@@ -26,7 +26,7 @@
   height: 10px;
   background: rgba(255, 255, 255, 0.201);
   position: relative;
-  border-radius: 2px;
+  border-radius: 50px;
   overflow: hidden;
 }
 .progress {
@@ -37,6 +37,7 @@
 
 @media (max-width: 900px) {
   .progressContainer {
+    margin-bottom: 3px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -47,7 +48,7 @@
   .progressBar {
     height: 5px;
     border-radius: 10px;
-    margin: 0 6px;
+    margin: 0 9px 0 5px;
   }
 
   .time-from,

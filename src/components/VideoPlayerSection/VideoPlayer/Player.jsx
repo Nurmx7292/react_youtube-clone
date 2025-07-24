@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import classes from "./VideoPlayer.module.css";
 import Cover from "../../../assets/Cover.png";
+import MobileCover from "../../../assets/Mobile_cover.png";
 import { ProgressBar } from "../../UI/ProgressBar/ProgressBar";
 export const Player = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -9,7 +10,11 @@ export const Player = () => {
   });
   return (
     <div className={classes.player}>
-      <img className={classes.cover} src={Cover} alt="#" />
+      <img
+        className={classes.cover}
+        src={`${width > 768 ? Cover : MobileCover}`}
+        alt="#"
+      />
       <div className={classes.controls}>
         {width > 900 && <ProgressBar duration={"19:00"} currentTime={"1:34"} />}
         <div className={classes.mobileControls}>
