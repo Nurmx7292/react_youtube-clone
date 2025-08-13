@@ -1,0 +1,288 @@
+.videoPlayer {
+  display: flex;
+  flex-direction: column;
+}
+.player {
+  position: relative;
+  width: 100%;
+}
+.cover {
+  width: 100%;
+}
+.controls {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+}
+.bottomControls {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-controls,
+.secondary-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bar {
+  position: absolute;
+  height: 8px;
+  width: 86px;
+  background: rgba(255, 255, 255, 0.2);
+  bottom: 14px;
+  right: -65px;
+  border-radius: 4px;
+}
+.fill {
+  border-radius: 4px;
+  height: 100%;
+  background: white;
+  width: 42%;
+}
+.main-controls {
+  position: relative;
+  gap: 40px;
+}
+.secondary-controls {
+  gap: 25px;
+}
+
+.volume {
+  width: 80px;
+}
+.subtitles {
+  margin-left: auto;
+}
+
+.video-title {
+  margin-top: 16px;
+  font-size: 36px;
+  font-weight: 700;
+}
+.video-info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 20px 0;
+}
+.video-info:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  bottom: 5px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(216, 216, 216, 0.5);
+}
+.video-controls {
+  margin: 0 39px 0 auto;
+  display: flex;
+  gap: 10px;
+}
+.video-controls:nth-child(1) {
+  margin-left: 30px;
+}
+.video-views {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.subscribe-button {
+  margin: 1px 0 0 0;
+  white-space: nowrap;
+  height: 40px;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.channel-card {
+  margin: 32px 0px 0 -5px;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+.channel-info {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5px;
+  color: white;
+}
+.channel-title {
+  font-size: 26px;
+}
+.publish-date {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #c2c2c253;
+}
+.channel-descr {
+  line-height: 22px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #ffffff71;
+  max-width: 810px;
+}
+.more {
+  font-size: 20px;
+  color: #c2c2c274;
+}
+
+.mobileControls {
+  display: none;
+}
+.sub-amount-mobile {
+  display: none;
+}
+@media (max-width: 900px) {
+  .publish-date,
+  .channel-descr,
+  .more,
+  .sub-amount,
+  .bottomControls {
+    display: none;
+  }
+  .video-info:after {
+    display: none;
+  }
+  .video-info {
+    margin: 4px 0 0 0;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    border: none;
+  }
+  .video-controls {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .mobile-more-button {
+    display: none;
+  }
+
+  .sub-amount-mobile {
+    display: block;
+  }
+  .mobileControls {
+    margin-bottom: 2px;
+    align-items: center;
+    border-radius: 10px;
+    height: 30px;
+    padding: 4px 18px 0 18px;
+    gap: 20px;
+    background: rgba(61, 61, 61, 0.6);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .mobileControls img {
+    height: 12px;
+    width: 12px;
+  }
+  .video-title,
+  .video-info {
+    padding: 0 16px;
+  }
+  .video-title {
+    position: relative;
+  }
+  .video-title::after {
+    height: 7px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    background-image: url(assets/RightArrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+  .subscribe-button {
+    background: none;
+    color: #ff0000;
+  }
+  .channel-card {
+    margin: 0;
+    align-items: center;
+    padding: 14px 14px;
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  .videoPlayer {
+    gap: 0;
+  }
+  .video-title {
+    margin-top: 9px;
+    font-size: 20px;
+    padding: 0 90px 0 16px;
+  }
+  .channel-title {
+    font-size: 16px;
+  }
+  .channel-info {
+    padding: 0 0 2px 0;
+    gap: 3.5px;
+  }
+  .video-views {
+    font-size: 12px;
+  }
+  .channel-image {
+    width: 50px;
+  }
+  .channel-image img {
+    width: 100%;
+  }
+  .cover {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  .mobileControls {
+    width: 308px;
+    gap: 0;
+  }
+  .channel-card {
+    margin: 4px 0 0 0px;
+    padding: 17px 14px 11px 16px;
+    gap: 10px;
+  }
+  .channel-card::after,
+  .channel-card::before {
+    margin: 0 auto;
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 89%;
+    background-color: rgba(254, 254, 254, 0.5);
+  }
+  .channel-card::after {
+    bottom: -6px;
+  }
+  .channel-card::before {
+    top: -4px;
+  }
+  .subscribe-button {
+    margin: 0 0 0 0;
+    padding: 8px 6px;
+  }
+}

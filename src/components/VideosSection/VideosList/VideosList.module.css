@@ -1,0 +1,15 @@
+.videos-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.videos-list li:nth-child(2) {
+  margin: -6px 0 0 0;
+}
+@media (max-width: 768px) {
+  .videos-list {
+    gap: 37px;
+  }
+}

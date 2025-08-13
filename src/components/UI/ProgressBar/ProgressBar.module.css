@@ -1,0 +1,84 @@
+.progressContainer {
+  position: relative;
+  width: 96.6%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  margin-bottom: 1px;
+}
+.time {
+  position: absolute;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+}
+.time-from {
+  top: -48px;
+  left: 0;
+}
+.time-to {
+  top: -48px;
+  right: 0;
+}
+.progressBar {
+  flex: 1;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.201);
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background: red;
+  width: 0%;
+}
+
+@media (max-width: 900px) {
+  .progressContainer {
+    margin-bottom: 3px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+  }
+
+  .progressBar {
+    height: 5px;
+    border-radius: 10px;
+    margin: 0 9px 0 5px;
+  }
+
+  .time-from,
+  .time-to {
+    position: static;
+    font-size: 14px;
+    color: white;
+  }
+
+  .time {
+    font-size: 14px;
+  }
+
+  .volume {
+    display: none;
+  }
+
+  .subtitles {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .time-from,
+  .time-to {
+    font-size: 10px;
+  }
+  .progressContainer {
+    padding-bottom: 3px;
+    gap: 1px;
+    width: 100%;
+    margin: 0 14px;
+  }
+}
